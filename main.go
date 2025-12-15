@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+	"os"
 	"net/http"
 	"github.com/cristiano_code/qrcode/handlers"
 )
@@ -16,5 +17,5 @@ func main() {
 	http.HandleFunc("/qrcode", handlers.GenarateQrcode)
 
 	log.Print("Server running in :8080")
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(os.GetEnv("PORT"), nil)
 }

@@ -17,5 +17,5 @@ func main() {
 	http.HandleFunc("/qrcode", handlers.GenarateQrcode)
 
 	log.Print("Server running in :8080")
-	http.ListenAndServe(os.Getenv("PORT"), nil)
+	http.ListenAndServe(":" + os.Getenv("PORT"), nil)
 }

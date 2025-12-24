@@ -15,7 +15,7 @@ func main() {
     http.Handle("/static/", http.StripPrefix("/static/", fileServerStatic))
 
     // Corrigir nome da função
-    http.HandleFunc("/qrcode", handlers.GenerateQrcode)
+    http.HandleFunc("/qrcode", handlers.GenarateQrcode)
 
     port := os.Getenv("PORT")
     if port == "" {

@@ -1,4 +1,4 @@
-module github.com/cristiano_code/qrcode
+module github.com/Cristiano67867/qrcode
 
 go 1.25.0
 

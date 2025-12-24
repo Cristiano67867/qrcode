@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"encoding/json"
 	"github.com/skip2/go-qrcode"
-	"github.com/cristiano_code/qrcode/models"
+	"github.com/Cristiano67867/qrcode/models"
 )
 
 func GenarateQrcode(w http.ResponseWriter, r *http.Request) {

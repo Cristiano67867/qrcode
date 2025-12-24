@@ -4,7 +4,7 @@ import (
     "log"
     "os"
     "net/http"
-    "github.com/cristiano_code/qrcode/handlers"
+    "github.com/Cristiano67867/qrcode/handlers"
 )
 
 func main() {
